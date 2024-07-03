@@ -1,0 +1,32 @@
+
+
+
+
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-primary"
+        >
+            <thead>
+                <tr>
+                    <th scope="col">srno</th>
+                    <th scope="col">name</th>
+                    <th scope="col">price</th>
+                    <th scope="col">action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of cart">
+                    <td >{{c.id}}</td>
+                    <td >{{c.name}}</td>
+                    <td>{{c.price}}</td>
+                    <td><button class="btn btn-danger " (click)="deleteitem(c)"> <mat-icon>delete_outline</mat-icon></button></td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    
+
+

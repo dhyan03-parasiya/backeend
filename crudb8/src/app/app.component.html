@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md"><label for="">name</label>
+      <input type="text" [(ngModel)]="user.name" name="name" id="Name" placeholder="NAME" class="form-control">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md"><label for="">mobile</label>
+      <input type="number" [(ngModel)]="user.mobile" name="mobile" id="Mobile" placeholder="MOBILE" class="form-control">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md"><label for="">email</label>
+      <input type="text" [(ngModel)]="user.email" name="email" id="Email" placeholder="EMAIL" class="form-control">
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="add()">add</button>
+</div>
+
+
+
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-primary"
+  >
+    <thead>
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">mobile</th>
+        <th scope="col">email</th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td >{{u.name}}</td>
+        <td>{{u.mobile}}</td>
+        <td>{{u.email}}</td>
+        <td>
+          <button class="btn btn-warning" (click)="deleteuser(u.id)">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

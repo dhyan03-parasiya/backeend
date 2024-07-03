@@ -1,0 +1,49 @@
+<form action="">
+  <div class="row">
+    <div class="col-md">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="user.name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <input type="text" class="form-control" id=" rollno" name="rollno" placeholder="rollno" [(ngModel)]="user.rollno">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <input type="text" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="user.email">
+    </div>
+  </div>
+  <button class="btn btn-primary"  (click)="add()" >add</button>
+</form>
+
+{{users | json}}
+
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-rounded"
+  >
+    <thead>
+      <tr>
+        <th scope="col">name </th>
+        <th scope="col">rollno </th>
+        <th scope="col">email</th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td >{{u.name}}</td>
+        <td>{{u.rollno}}</td>
+        <td>{{u.email}}</td>
+        <td>
+          <button class="btn btn-primary">update</button>
+          <button  (click)="deleteuser(u.id )" class="btn btn-primary">delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

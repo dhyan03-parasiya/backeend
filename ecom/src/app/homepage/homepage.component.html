@@ -1,0 +1,204 @@
+<app-navbar [cart]="cart"></app-navbar>
+
+<div class="bg-dark">
+    
+    
+    
+    <!-- sale page -->
+    <div class="container rounded-3 ">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active " data-bs-interval="10000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/en-epic-savings-june-breaker-asset-cd36d1e1c4e3.avif?h=480&quality=medium&resize=1&w=854" class="d-block w-100" alt="...">
+          </div> 
+    
+           <div class="carousel-item" data-bs-interval="2000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/egs-honkai-star-rail-2-3-carousel-desktop-2560x1440-7f693caaa5de.jpg?h=720&quality=medium&resize=1&w=1280" class="d-block w-100" alt="...">
+          </div> 
+        
+          <div class="carousel-item" data-bs-interval="3000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/egs-alan-wake-2-night-springs-dlc-carousel-desktop-1920x1080-3415679c5f3b.jpg?h=720&quality=medium&resize=1&w=1280" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-item" data-bs-interval="4000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/egs-destiny-2-season-24-carousel-desktop-1920x1080-aca83d544512.jpg?h=720&quality=medium&resize=1&w=1280   " class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-item" data-bs-interval="5000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/egs-madden-25-deluxe-carousel-desktop-1248x702-4230838ef97c.jpeg?h=720&quality=medium&resize=1&w=1280" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img height="560" width="440" src="https://cdn2.unrealengine.com/egs-fortnite-festival-s4-metallica-carousel-desktop-1920x1080-efbb4db07330.jpg?h=720&quality=medium&resize=1&w=1280" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+    
+    
+    
+    
+    <!-- 1 row card  -->
+    
+    <div class="container bg-dark">
+    
+    <div class="row">
+      <div class="col-md my-5">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_RiseoftheTombRaider20YearCelebration_CrystalDynamics_S2_1200x1600-a73f93bb560142e08d56db4c2bfdb03c?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-light">Rise Of The Tomb Raider</h5>
+            <p class="card-text text-light"> $20</p>
+            <button class="btn btn-dark "  (click)="counter(1)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md my-5">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src="https://cdn1.epicgames.com/offer/4750c68b2bfa4f43933b81cfd5cc510c/EGS_EASPORTSFC24StandardEdition_EACanada_S2_1200x1600-5ecbb77fd9c0601ef34c4a988120fc42?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-light">EA:FC24</h5>
+            <p class="card-text text-light">$25</p>
+            <button class="btn btn-dark " (click)="counter(2)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md my-5">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src="https://cdn1.epicgames.com/offer/edffc5fcc62140a7afd239d9e65df463/EGS_F124_Codemasters_S2_1200x1600-4640c5c849df939a2303ab872d618530?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-light">EA:F124</h5>
+            <p class="card-text text-light">$15</p>
+            <button class="btn btn-dark "(click)="counter(3)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md my-5">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src="https://cdn1.epicgames.com/spt-assets/00d69100f090489d9a8cd2db75ad9d8e/need-for-speed-payback-7dqwz.jpg" alt="Title" />
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-light">Need For Speed</h5>
+            <p class="card-text text-light">$12</p>
+            <button class="btn btn-dark "(click)="counter(4)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md my-5">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src="https://cdn1.epicgames.com/offer/fn/Blade_1200x1600_1200x1600-fcea56f5eb92df731a89121e2b4416b5?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light">Fortnite</h4>
+            <p class="card-text text-light">Free</p>
+            <button class="btn btn-dark "(click)="counter(5)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+    
+      
+    </div>
+    </div>
+    
+    
+    <!-- 2 row card -->
+     <div class="container bg-dark">
+    <div class="row">
+      <div class="col-md ">
+        <div class="card border border-dark">
+          <img class="card-img-top " height="300" width="100" src="https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/ROCKETTALL_1200x1600-95561a46e899058cf113ba74d0bb246b?h=480&quality=medium&resize=1&w=360 " alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light">Rocket League</h4>
+            <p class="card-text text-light">Free</p>
+            <button class="btn btn-dark "(click)="counter(6)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md ">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src= "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077UltimateEdition_CDPROJEKTRED_Editions_S2_1200x1600-81442c61fd09b45ecd03add7c0c3afdd?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light">Chyberpunk</h4>
+            <p class="card-text text-light ">$80</p>
+            <button class="btn btn-dark "(click)="counter(7)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-md ">
+        <div class="card border border-dark">
+          <img class="card-img-top" height="300" width="100" src= "https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light ">GTA V</h4>
+            <p class="card-text text-light">$50</p>
+            <button class="btn btn-dark "(click)="counter(8)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md ">
+        <div class="card border border-dark">
+          <img class="card-img-top border border-dark" height="300" width="100" src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-780189aef89b5076cef49b93e40633a0?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light">Valorant</h4>
+            <p class="card-text text-light">Free</p>
+            <button class="btn btn-dark "(click)="counter(9)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md ">
+        <div class="card border border-dark">
+          <img class="card-img-top " height="300" width="100" src="https://cdn1.epicgames.com/offer/4bc43145bb8245a5b5cc9ea262ffbe0e/EGS_MarvelsSpiderManRemastered_InsomniacGamesNixxesSoftware_S2_1200x1600-76424286902489f4d9639ac9b735c2b2?h=480&quality=medium&resize=1&w=360" alt="Title" />
+          <div class="card-body bg-dark">
+            <h4 class="card-title text-light">Spiderman:Remastered</h4>
+            <p class="card-text text-light">$50</p>
+            <button class="btn btn-dark "(click)="counter(10)">Add to cart</button>
+          </div>
+        </div>
+        
+      </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="card border border-dark">
+            <img class="card-img-top rounded  " src="https://cdn2.unrealengine.com/en-egs-dotw-cotw-angler-gold-fishing-bundle-breaker-1920x1080-ddf6cb9b5e0a.jpg?h=480&quality=medium&resize=1&w=854" alt="Title" />
+            
+          </div>
+          
+        </div>
+        <div class="col-md">
+          <div class="card border border-dark">
+            <img class="card-img-top rounded " src="https://cdn2.unrealengine.com/en-egs-sonic-frontiers-breaker-1920x1080-69333cea89db.jpg?h=480&quality=medium&resize=1&w=854" alt="Title" />
+            
+          </div>
+          
+        </div>
+        <div class="col-md ">
+          <div class="card border border-primary ">
+            <img class="card-img-top rounded" src="https://cdn2.unrealengine.com/en-dotw-egs-evergreen-asset-1920x1080-434757f6ceda.jpg?h=480&quality=medium&resize=1&w=854" alt="Title" />
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,44 @@
+<form>
+  <div class="row">
+    <div class="col-md">
+      <input type="text" class="form-control"[(ngModel)]="student.name" placeholder="studentname" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <input type="number"  class="form-control" [(ngModel)]="student.rollno" placeholder="rollno" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <button class="btn btn-primary" (click)="add()"> add</button>
+    </div>
+  </div>
+</form>
+
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-primary"
+  >
+    <thead>
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">rollno </th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of student">
+        <td >{{u.name}}</td>
+        <td>{{u.rollno}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="update()">update</button>
+          <button class="btn btn-primary"(click)="delete()">delete</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>

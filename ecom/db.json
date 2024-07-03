@@ -1,0 +1,60 @@
+{
+  "user": [
+    {
+      "cart": [],
+      "id": "1"
+    }
+  ],
+  "products": [
+    {
+      "name": "tomb rider",
+      "id": "1",
+      "price": 20
+    },
+    {
+      "name": "FC24",
+      "id": "2",
+      "price": 25
+    },
+    {
+      "name": "F124",
+      "id": "3",
+      "price": 15
+    },
+    {
+      "name": "need for speed",
+      "id": "4",
+      "price": 12
+    },
+    {
+      "name": "fortnite",
+      "id": "5",
+      "price": 0
+    },
+    {
+      "name": "rocket leage",
+      "id": "6",
+      "price": 0
+    },
+    {
+      "name": "cyberpunk",
+      "id": "7",
+      "price": 80
+    },
+    {
+      "name": "GTA5",
+      "id": "8",
+      "price": 50
+    },
+    {
+      "name": "valorant",
+      "id": "9",
+      "price": 0
+    },
+    {
+      "name": "spiderman",
+      "id": "10",
+      "price": 50
+    }
+  ]
+}
